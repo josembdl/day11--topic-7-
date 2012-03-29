@@ -1,0 +1,145 @@
+/* 
+    Document   : default
+    Created on : DATE
+    Author     : YOU <your@email>
+    Description:
+        CSS3 playground
+*/
+
+/* Punto 2 */
+@media screen and (min-width: 1200px) {
+	article > p
+	{
+		-moz-column-count: 4;
+		-moz-column-gap: 20px;
+		-webkit-column-count: 4;
+		-webkit-column-gap: 20px;
+		column-count: 4;
+		column-gap: 20px;
+	}
+	#logo img
+	{
+		width: 25%;
+	}
+}
+
+/* Punto 3 */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+	article > p
+	{
+		-moz-column-count: 3;
+		-moz-column-gap: 20px;
+		-webkit-column-count: 3;
+		-webkit-column-gap: 20px;
+		column-count: 3;
+		column-gap: 20px;
+	}
+	#logo img
+	{
+		width: 12%;
+	}
+}
+
+/***** Punto 4 (KeyPoint) *****/
+@media screen and (max-width: 800px) {
+	#logo img
+	{
+		width: 0%;
+	}
+}	
+
+/***** Punto 5 (KeyPoint) *****/
+
+header, nav, article, section, footer, figure, aside {display: block;}
+
+/** Inciso a **/
+body {
+        font-family: sans-serif;
+	text-align: justify;
+	padding: 8px;
+}
+
+/** Inciso b **/
+#menu a:hover {
+    color: red;
+}
+
+/** Inciso c **/
+#menu li {
+    border-left-style: solid;
+    border-right-style: solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline;
+    margin: 5px;
+}
+
+/** Inciso d **/
+
+/** Inciso e **/
+.hiOne {
+    background-color: #00ff00;
+}
+
+.hiTwo {
+    background-color: #00ffcc;
+}
+
+.hiThree {
+    background-color: #ccff00;
+}
+
+/** Inciso f **/
+[class^="hi"] {
+    background-color: yellow;
+}
+
+/** Inciso g **/
+[class$="One"] {
+    background-color: red;
+}
+
+/** Inciso h **/
+[class^="hi"], [class$="One"] {
+    background-color: white;
+}
+
+/** Inciso i **/
+header p a:nth-child(2)
+{
+	color: #ffdd33;
+}
+
+header p a:nth-child(3)
+{
+	color: #ffddaa;
+        background-color: blue;
+}
+
+/** Inciso j **/
+p:empty {
+	display: none;
+}
+
+/** Inciso k **/
+article {
+	-moz-box-shadow: 3px 3px 5px 3px #880000;
+  	-webkit-box-shadow: 3px 3px 5px 3px #880000;
+  	box-shadow: 3px 3px 5px 3px #880000;
+}
+
+/** Inciso l **/
+
+aside {
+    /* Safari */
+    -webkit-transform: rotate(-5deg);
+
+    /* Firefox */
+    -moz-transform: rotate(5deg);
+
+    /* IE */
+    -ms-transform: rotate(-10deg);
+
+    /* Opera */
+    -o-transform: rotate(-10deg);
+}
